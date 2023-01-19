@@ -1,0 +1,38 @@
+.login {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-box {
+    width: fit-content;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid grey; */
+    padding: 20px;
+}
+
+.login-input {
+    width: 20rem;
+    margin: 20px 0;
+    border-bottom: 1px solid grey;
+    border-radius: 0;
+    
+}
+
+
+
+.login-btn {
+    width: 20rem;
+}
+
+.login-box > a {
+    text-decoration: none;
+    caret-color: grey;
+    position: relative;
+    right: 0;
+}
