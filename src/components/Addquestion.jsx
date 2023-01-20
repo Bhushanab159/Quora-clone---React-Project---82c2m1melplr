@@ -84,6 +84,8 @@ const addData = (e) => {
         isLoggedIn ? ( <div className='addquestion-box'>
         <input className='question-input' type="text" name='question' value={inputdata} onChange={getData} placeholder='Type your Question here...' />
         <div className='btn'>
+        </div>
+        <div className="question-btn">
         <button>cancel</button>
         <button onClick={addData}>Add Question</button>
         </div>
