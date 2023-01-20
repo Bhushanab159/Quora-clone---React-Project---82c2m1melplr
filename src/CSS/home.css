@@ -25,6 +25,7 @@
     /* border: 1px solid grey; */
     background-color: #fff;
     padding: 10px;
+    overflow:auto
 }
 
 .question_bar > h2 {
@@ -37,4 +38,13 @@
 }
 
 
+@media screen and (max-width: 480px) {
+    .left {
+        flex: 0.5;
+        margin-left: 20px;
+    }
+    .right {
+        flex: 0.3;
+    }
+}
 
