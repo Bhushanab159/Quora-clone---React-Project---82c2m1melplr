@@ -1,6 +1,6 @@
 .home {
     display: flex;
-    /* justify-content: cen; */
+    width: 100vw;
     margin-top: 2px;
     background-color: rgb(243, 242, 240);
     height: fit-content;
@@ -32,6 +32,9 @@
     margin: 10px;
 }
 
+.question_bar > p {
+    margin: 4px 0;
+}
 
 
 

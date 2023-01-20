@@ -36,7 +36,6 @@ function Header() {
 
 
   return (
-    <>
     <div className='header'>
       <div className='sub-header'>
       <Link to="/"> <img className='logo' src={logo} alt="logo" /></Link> 
@@ -48,7 +47,7 @@ function Header() {
 
       {/* <Link to="/addanswer"><button>Answer Questions</button></Link> */}
       {/* <button onClick={handlelogout} >logout</button> */}
-      <div  onClick={handleClick}>
+      <div style={{ cursor: "pointer", }} onClick={handleClick}>
       <Avatar />
       </div>
       </div>
@@ -60,10 +59,9 @@ function Header() {
     {
       isLoggedIn ?  <button className='span-btn' onClick={handlelogout} >logout</button> : <Link to="/userlogin" className='span-btn'><button className='span-btn'>Login</button></Link>
     }
-</div>
+  </div>
     </div>
     
-    </>
   )
 }
 

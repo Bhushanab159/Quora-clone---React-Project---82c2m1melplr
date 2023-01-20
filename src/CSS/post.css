@@ -29,13 +29,15 @@
 .post-body {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .post-question {
-    margin: 10px 0;
+    margin-top: 10px;
     font-weight: bold;
     cursor: pointer;
     display: flex;
+    flex-wrap: wrap;
 }
 .post-btn{
     margin-left: auto;
@@ -65,8 +67,9 @@
 
 }
 
-
-
+.post-answer >span {
+    font-size: smaller;
+}
 
 .post-footerAction{
     display: flex;

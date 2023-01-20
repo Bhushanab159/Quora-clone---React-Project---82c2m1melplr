@@ -55,7 +55,7 @@ function Addanswer() {
   return (
     <>  
     {
-      isLoggedIn ?  ( <div className='addanswer'>
+      isLoggedIn   ?  ( <div className='addanswer'>
       <div className='sub-addanswer'>
        <div className='question-sec'>
           <h1>Question :</h1>

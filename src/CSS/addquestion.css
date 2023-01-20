@@ -1,20 +1,24 @@
 .addquestion-box {
 height: 80vh;
 background-color: rgb(243, 242, 240);
-display: flex;
-flex-direction: column;
+/* display: flex;
+flex-direction: column; */
 align-items: center;
 }
 
 .question-input {
     margin-top: 20px;
     width: 50%;
-    height: 2.5rem;
+    height: 5rem;
     padding: 10px;
+    margin-left: 100px;
+    margin-top: 50px;
+
 }
 
 .btn {
     width: 50%;
     text-align: right;
     margin-top: 10px;
+    margin-left: 100px;
 }

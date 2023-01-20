@@ -4,6 +4,8 @@
     display: flex;
     /* align-items: center; */
     justify-content: center;
+    background-color: #fff;
+
 
 }
 
@@ -11,15 +13,24 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 30vw;
+    background-color: #fff;
+    /* border: 1px solid grey; */
+    height: 25rem;
+    width: 30%;
     margin-top: 50px;
+    border-radius: 25px;
 }
 
 .register-input {
     width: 20rem;
     margin: 20px 0;
+    border: none;
     border-bottom: 1px solid grey;
-    border-radius: 0;
+    align-items: center;
+    height: 2rem;
+    outline: none;
+
+
 }
 .register-btn {
     width: 20rem;

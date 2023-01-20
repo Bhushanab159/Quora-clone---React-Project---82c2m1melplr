@@ -56,11 +56,8 @@ function Post() {
             <div className='post' key={data.id}>
             <div className="post-info">
               <Avatar />
-              
               <h5> {data.questionedBy} </h5>
               
-              
-              <small>Timestamp</small>
             </div>
             <div className="post-body">
               <div className="post-question">
@@ -69,7 +66,7 @@ function Post() {
               </div>
               <div className="post-answer">
                   <p>Answer: {data.answer}</p>
-                  <span>{data.answeredBy}</span>
+                  <span>answeredBy: {data.answeredBy}</span>
               </div>
               <img src="" alt="" />
             </div>

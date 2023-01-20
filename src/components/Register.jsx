@@ -67,6 +67,7 @@ function Register() {
             return temp;
           })
       }  
+      rendarAtRegister("/addquestion")
 
   }
 
