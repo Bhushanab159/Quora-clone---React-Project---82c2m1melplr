@@ -103,6 +103,9 @@ button {
         width: 10rem;
         
     }
+    .header {
+        width: 120%;
+    }
 
     .sub-header{
         justify-content: space-between;
