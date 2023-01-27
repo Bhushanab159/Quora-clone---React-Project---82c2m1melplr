@@ -55,8 +55,8 @@ function Register() {
       }else if (password.length < 5 ){
         alert("Please make password length more then 5...")
       }else{
-          console.log("coming");
-          localStorage.setItem("a", "b");
+          // console.log("coming");
+          // localStorage.setItem("a", "b");
 
           localStorage.setItem("user", JSON.stringify([...data, inpval]));
           console.log(inpval);

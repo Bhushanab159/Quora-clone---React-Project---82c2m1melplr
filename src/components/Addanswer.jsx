@@ -1,4 +1,4 @@
-import React,{useContext, useState} from 'react'
+import React,{useContext, useState, useEffect} from 'react'
 import "../CSS/addanswer.css";
 import { useParams, useNavigate } from 'react-router-dom';
 import { LoginContext } from './App';
@@ -9,6 +9,12 @@ function Addanswer() {
   const renderAtAddQuestion = useNavigate();
 
   const {isLoggedIn, setIsLoggedIn, loggedInUser, setLoggedInUser} = useContext(LoginContext);  
+
+  useEffect(()=>{
+    if (isLoggedIn === false ){
+      renderAtAddQuestion("/userlogin");
+    }
+  }, [isLoggedIn])
 
   const questionArr = JSON.parse(localStorage.getItem("questionAndAnswers"));
 
@@ -54,8 +60,7 @@ function Addanswer() {
 
   return (
     <>  
-    {
-      isLoggedIn   ?  ( <div className='addanswer'>
+    <div className='addanswer'>
       <div className='sub-addanswer'>
        <div className='question-sec'>
           <h1>Question :</h1>
@@ -74,8 +79,7 @@ function Addanswer() {
             <button onClick={setAns}>Add Answer</button>
         </div>
       </div>
-    </div>) : window.location.assign("/userlogin") 
-    }   
+    </div>   
     </>
 
 

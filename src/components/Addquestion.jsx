@@ -14,7 +14,13 @@ function Addquestion() {
 
   const {isLoggedIn, setIsLoggedIn, loggedInUser, setLoggedInUser } = useContext(LoginContext);
 
-  console.log("check", loggedInUser);
+useEffect(()=>{
+  if (isLoggedIn === false ){
+    renderAtAddQuestion("/userlogin");
+  }
+}, [isLoggedIn])
+
+ 
 
   const questiondb =  JSON.parse(localStorage.getItem("questionAndAnswers"));
 
@@ -80,8 +86,8 @@ const addData = (e) => {
 
   return (
       <>
-      {
-        isLoggedIn ? ( <div className='addquestion-box'>
+      
+        <div className='addquestion-box'>
         <input className='question-input' type="text" name='question' value={inputdata} onChange={getData} placeholder='Type your Question here...' />
         <div className='btn'>
         </div>
@@ -89,8 +95,7 @@ const addData = (e) => {
         <button>cancel</button>
         <button onClick={addData}>Add Question</button>
         </div>
-    </div> ) : window.location.assign("/userlogin") 
-      }
+    </div> 
     </>
   )
 }
