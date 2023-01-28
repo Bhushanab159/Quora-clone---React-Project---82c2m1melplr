@@ -13,7 +13,7 @@
 }
 .right {
     flex: 0.3;
-    position: sticky;
+
 }
 
 .question_bar {
@@ -26,7 +26,8 @@
     /* border: 1px solid grey; */
     background-color: #fff;
     padding: 10px;
-    overflow:auto
+    overflow:auto;
+
 }
 
 .question_bar > h2 {
