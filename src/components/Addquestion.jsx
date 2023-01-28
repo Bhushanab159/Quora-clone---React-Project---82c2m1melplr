@@ -31,7 +31,10 @@ useEffect(()=>{
    answeredBy: "",
     questionedBy: "",
     question: "",
-    answer: ""
+    answer: "",
+    like: 0,
+    likeColor : "gray",
+    disLikeColor: "gray",
 
   }) 
 
@@ -92,7 +95,7 @@ const addData = (e) => {
         <div className='btn'>
         </div>
         <div className="question-btn">
-        <button>cancel</button>
+        <button  onClick={() => { renderAtAddQuestion("/") }} >cancel</button>
         <button onClick={addData}>Add Question</button>
         </div>
     </div> 

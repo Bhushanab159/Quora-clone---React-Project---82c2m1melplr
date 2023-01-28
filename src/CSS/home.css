@@ -13,6 +13,7 @@
 }
 .right {
     flex: 0.3;
+    position: sticky;
 }
 
 .question_bar {

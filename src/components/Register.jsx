@@ -67,7 +67,7 @@ function Register() {
             return temp;
           })
       }  
-      rendarAtRegister("/addquestion")
+      rendarAtRegister("/userlogin")
 
   }
 
